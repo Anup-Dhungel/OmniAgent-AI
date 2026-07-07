@@ -189,18 +189,8 @@ Web         File I/O
 
 ---
 
-## 📌 Future Improvements
 
-- PDF Reader
-- RAG Support
-- ChromaDB Integration
-- PostgreSQL Memory
-- Voice Assistant
-- Image Understanding
-- Multi-Agent Collaboration
-- Docker Deployment
-- Authentication
-- REST API
+
 
 ---
 
@@ -210,8 +200,8 @@ Web         File I/O
 
 Aspiring AI/ML Engineer from Nepal.
 
-- GitHub: https://github.com/yourusername
-- LinkedIn: https://linkedin.com/in/yourprofile
+- GitHub: https://github.com/Anup-Dhungel
+- LinkedIn: https://linkedin.com/in/Anup_Dhungel
 
 ---
 
@@ -221,6 +211,3 @@ If you found this project useful, please consider giving it a ⭐ on GitHub.
 
 ---
 
-## 📜 License
-
-This project is licensed under the MIT License.
