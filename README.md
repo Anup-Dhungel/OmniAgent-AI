@@ -1,55 +1,97 @@
 # 🤖 OmniAgent AI
 
-An autonomous AI agent built with **LangGraph** that can search the web, read files, execute Python code, and maintain conversation memory.
+> An autonomous AI agent built with **LangGraph** that can search the web, read and write files, execute Python code, and maintain conversation memory.
 
-![Python](https://img.shields.io/badge/Python-3.11-blue)
+![Python](https://img.shields.io/badge/Python-3.11+-blue)
 ![LangGraph](https://img.shields.io/badge/LangGraph-AI-green)
-![Groq](https://img.shields.io/badge/Groq-LLM-orange)
-![Tavily](https://img.shields.io/badge/Tavily-Web%20Search-red)
+![Streamlit](https://img.shields.io/badge/Streamlit-Deployed-red)
 ![License](https://img.shields.io/badge/License-MIT-yellow)
 
 ---
 
-## 🚀 Features
+## 🚀 Live Demo
 
-- 🌐 Web Search using Tavily Search API
-- 📄 Read text files
-- 💻 Execute Python code safely
-- 📂 File Input/Output (Read & Write Files)
-- 🧠 Persistent conversation memory
-- 🤖 Autonomous tool selection using LangGraph
-- ⚡ Powered by Groq/OpenAI LLMs
-- 🔧 Modular and extensible architecture
+🔗 **Try the App:** [https://YOUR-APP-NAME.streamlit.app](https://anup-dhungel-omniagent-ai-app-ufn8ob.streamlit.app/)
 
 ---
 
-## 🛠️ Tech Stack
+## 📂 GitHub Repository
+
+🔗 https://github.com/YOUR_USERNAME/OmniAgent-AI
+
+---
+
+# 📖 Overview
+
+OmniAgent AI is an autonomous AI assistant that intelligently chooses the appropriate tool to solve user requests. It integrates Large Language Models (LLMs) with external tools such as web search, Python code execution, and file operations to complete multi-step tasks.
+
+---
+
+# ✨ Features
+
+- 🌐 Real-time Web Search using Tavily Search
+- 💻 Execute Python code
+- 📄 Read files
+- 📝 Create and write files
+- 🧠 Conversation memory
+- 🤖 Autonomous tool selection with LangGraph
+- ⚡ Powered by Groq/OpenAI LLM
+- 🎨 Interactive Streamlit interface
+
+---
+
+# 🛠 Tech Stack
 
 | Technology | Purpose |
 |------------|---------|
 | Python | Programming Language |
 | LangGraph | AI Agent Workflow |
-| LangChain | LLM Integration |
+| LangChain | LLM Framework |
 | Groq/OpenAI | Large Language Model |
-| Tavily Search | Real-time Web Search |
+| Tavily Search | Web Search |
+| Streamlit | Web Interface |
 | Python REPL | Code Execution |
 | File I/O | Read & Write Files |
 
 ---
 
-## 📂 Project Structure
+# 🏗 Architecture
+
+```
+               User
+                 │
+                 ▼
+          Streamlit UI
+                 │
+                 ▼
+          LangGraph Agent
+      ┌─────────┼──────────┐
+      │         │          │
+      ▼         ▼          ▼
+ Web Search  Python REPL  File I/O
+      │         │          │
+      └─────────┼──────────┘
+                ▼
+          Groq/OpenAI LLM
+                │
+                ▼
+          Final Response
+```
+
+---
+
+# 📂 Project Structure
 
 ```
 OmniAgent-AI/
 │
-├── main.py                 # Entry point
-├── agent.py                # LangGraph agent
-├── tools.py                # Custom tools
-├── prompts.py              # System prompts
+├── app.py
+├── main.py
+├── agent.py
+├── tools.py
 ├── requirements.txt
-├── app.py                  # Streamlit UI (if added)
-├── README.md
 ├── .env.example
+├── README.md
 ├── .gitignore
 │
 ├── uploads/
@@ -59,13 +101,12 @@ OmniAgent-AI/
 
 ---
 
-## ⚙️ Installation
+# ⚙️ Installation
 
 Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/OmniAgent-AI.git
-
+git clone https://github.com/YOUR_USERNAME/OmniAgent-AI.git
 cd OmniAgent-AI
 ```
 
@@ -83,7 +124,7 @@ Windows
 venv\Scripts\activate
 ```
 
-Linux/Mac
+Linux / macOS
 
 ```bash
 source venv/bin/activate
@@ -97,7 +138,7 @@ pip install -r requirements.txt
 
 ---
 
-## 🔑 Environment Variables
+# 🔑 Environment Variables
 
 Create a `.env` file
 
@@ -108,15 +149,7 @@ TAVILY_API_KEY=your_tavily_api_key
 
 ---
 
-## ▶️ Run the Project
-
-Terminal version
-
-```bash
-python main.py
-```
-
-Streamlit version
+# ▶️ Run Locally
 
 ```bash
 streamlit run app.py
@@ -124,90 +157,64 @@ streamlit run app.py
 
 ---
 
-## 💬 Example Prompts
+# 💬 Example Prompts
 
-### Web Search
+### 🌐 Web Search
 
 ```
 Latest AI news today
 ```
 
-### File Reading
+### 📄 Read File
 
 ```
 Read sample.txt
 ```
 
-### File Writing
+### 📝 Create File
 
 ```
-Create a file called nepal.py with an introduction to Nepal.
+Create a file named nepal.py with an introduction to Nepal.
 ```
 
-### Code Execution
+### 💻 Execute Code
 
 ```
-Write Python code to generate Fibonacci numbers.
-```
-
----
-
-## 📸 Demo
-
-Add screenshots or a GIF here.
-
-Example:
-
-```
-images/demo.png
-```
-
----
-
-## 🏗️ Architecture
-
-```
-User
-   │
-   ▼
-Streamlit UI
-   │
-   ▼
-LangGraph Agent
-   │
- ├───────────────┐
- │               │
- ▼               ▼
-Tavily      Python REPL
- │               │
- ▼               ▼
-Web         File I/O
-      │
-      ▼
- Groq/OpenAI
+Write Python code to print the Fibonacci series.
 ```
 
 ---
 
 
+---
 
+# 🔮 Future Improvements
+
+- ✅ RAG Support
+- ✅ PDF Upload
+- ✅ ChromaDB Integration
+- ✅ PostgreSQL Memory
+- ✅ Voice Assistant
+- ✅ Image Understanding
+- ✅ Docker Support
+- ✅ Multi-Agent Workflow
 
 ---
 
-## 👨‍💻 Author
+# 👨‍💻 Author
 
 **Anup**
 
-Aspiring AI/ML Engineer from Nepal.
+Aspiring AI/ML Engineer from Nepal 🇳🇵
 
-- GitHub: https://github.com/Anup-Dhungel
+- GitHub: https://github.com/Anup_Dhungel
 - LinkedIn: https://linkedin.com/in/Anup_Dhungel
 
 ---
 
-## ⭐ Support
+# ⭐ Support
 
-If you found this project useful, please consider giving it a ⭐ on GitHub.
+If you like this project, please give it a ⭐ on GitHub!
 
 ---
 
